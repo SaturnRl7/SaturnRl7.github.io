@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bean spin</title>
+
+    <style>
+        h1 {
+            font-size: 12em;
+            font-family: cursive, 'Comic Sans';
+        }
+
+        .saturn_special {
+            color: rgba(141, 85, 0, 0.76);
+            animation: spin 2.5s infinite;
+            animation-timing-function: linear;
+        }
+
+        body {
+            animation: mymove 6s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes beanmove {
+            0% {background-color: hsl(0, 50%, 50%);}
+            25% {background-color: hsl(90, 50%, 50%);}
+            50% {background-color: hsl(180, 50%, 50%);}
+            75% {background-color: hsl(270, 50%, 50%);}
+            100% {background-color: hsl(360, 50%, 50%);}
+        }
+
+        @keyframes mymove {
+            0% {background-color: rgb(255, 0, 0);}
+            20% {background-color: rgb(255, 155, 0);}
+            40% {background-color: rgb(255, 255, 0);}
+            60% {background-color: rgb(0, 255, 0);}
+            80% {background-color: rgb(0, 0, 255);}
+            100% {background-color: rgb(98, 0, 128);}
+        }
+
+        @keyframes spin {
+            0% {transform: rotateY(0deg)}
+            50% {transform: rotateY(180deg)}
+            100% {transform: rotateY(360deg)}
+            
+        }
+    </style>
+
+</head>
+<body>
+   
+    <h1 class="saturn_special">Beans</h1>
+</body>
+</html>
+Yes it is spinning beans
